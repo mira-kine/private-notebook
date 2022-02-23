@@ -12,7 +12,6 @@ export default function Auth({ isSigningUp = false }) {
 
   const handleSubmit = async (email, password) => {
     try {
-      // TODO: Implement sign up & sign
       // Use isSigningUp to determine whether to sign up or sign in a user
       if (isSigningUp) {
         // If signing up: redirect to /confirm-email
