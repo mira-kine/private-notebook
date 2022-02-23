@@ -14,5 +14,6 @@ jobs:
         node-version: '14.x'
     - run: npm ci
     - run: npm test
-      env:
+      env:SUPABASE_URL: ${{secrets.SUPABASE_URL}}
+          SUPABASE_KEY: ${{secrets.SUPABASE_KEY}}
         CI: true
