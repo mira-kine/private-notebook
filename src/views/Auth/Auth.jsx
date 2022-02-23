@@ -21,7 +21,6 @@ export default function Auth({ isSigningUp = false }) {
       } else {
         // If signing in: set the user ({id, email}) and redirect to /notes
         const resp = await signInUser(email, password);
-        console.log('resp', resp);
         setUser({ id: resp.id, email: resp.email });
         history.replace('/profile');
       }
